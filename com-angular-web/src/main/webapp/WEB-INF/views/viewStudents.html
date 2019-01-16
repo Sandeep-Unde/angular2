@@ -1,0 +1,13 @@
+<div class="container">
+	<h2>View Students</h2>
+	Search: <br /> <input type="text" ng-model="name" /> <br />
+	<ul>
+		<li ng-repeat="student in students | filter:name">{{student.name}}
+			, {{student.city}}</li>
+	</ul>
+	<a href="#/home"> Back</a>
+</div>
+//In the above view, you can see a list of students with a search option.
+
+//Finally, follow below steps to complete our AngularJS routing example
+//application.
