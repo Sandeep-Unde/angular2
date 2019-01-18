@@ -1,4 +1,7 @@
+  
   <div ng-app="myApp" class="ng-cloak" >
+  <script src="<c:url value='/js/app.js' />"></script>
+  <script src="<c:url value='/js/directives/first-directive.js' />"></script>
       <div class="generic-container" ng-controller="UserController as ctrl" ng-init="initialize(${server_port})">
           <div class="panel panel-default">
               <div class="panel-heading"><span class="lead">User Registration Form </span></div>
@@ -55,7 +58,7 @@
       </div>
       
     
-      <script src="<c:url value='/js/app.js' />"></script>
+      
       <script src="<c:url value='/js/service/user_service.js' />"></script>
       <script src="<c:url value='/js/controller/user_controller.js' />"></script>
   </div>

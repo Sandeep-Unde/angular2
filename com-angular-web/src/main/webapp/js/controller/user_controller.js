@@ -14,7 +14,6 @@ angular.module('myApp').controller('UserController', ['$rootScope','$scope', 'Us
         
     $scope.ser_port = "8080"; //not really needed
     $scope.initialize = function(server_port){
-    	alert(server_port);
         $scope.ser_port=server_port;
         $rootScope.ser_port = server_port;
     }

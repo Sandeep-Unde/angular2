@@ -1,4 +1,6 @@
   <div ng-app="myApp" class="ng-cloak" >
+  <script src="<c:url value='/js/app.js' />"></script>
+  <script src="<c:url value='/js/directives/first-directive.js' />"></script>
       <div class="generic-container" ng-controller="UserListController as ctrl">
           
           <div class="panel panel-default" onload="ctrl.fetchAllUsers()">
@@ -34,7 +36,6 @@
 		</div>
 	</div>
 </div>
-      <script src="<c:url value='/js/app.js' />"></script>
       <script src="<c:url value='/js/service/user_service.js' />"></script>
       <script src="<c:url value='/js/controller/user_controller.js' />"></script>
       <script src="<c:url value='/js/controller/userlistcontroller.js' />"></script>

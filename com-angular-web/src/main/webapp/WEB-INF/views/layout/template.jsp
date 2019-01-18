@@ -6,6 +6,14 @@
 <meta name="viewport" content="width=device-width" />
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/first.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+ <script type ="text/Javascript" src="${pageContext.request.contextPath}/js/lib/jquery/jquery-2.1.1.min.js"></script>
+<script type ="text/Javascript" src="${pageContext.request.contextPath}/js/lib/jquery/jquery-ui.min.js"></script>
+<script type ="text/Javascript" src="${pageContext.request.contextPath}/js/lib/jquery/jquery.event.drag-2.2.js"></script>
+<script type ="text/Javascript" src="${pageContext.request.contextPath}/js/lib/jquery/jquery.mousewheel.min.js"></script>
+<script type ="text/Javascript" src="${pageContext.request.contextPath}/js/lib/jquery/jquery.jscrollpane-custom.js"></script>
+<script type ="text/Javascript" src="${pageContext.request.contextPath}/js/lib/jquery/jquery.numeric.js"></script>
+<script type ="text/Javascript" src="${pageContext.request.contextPath}/js/lib/jquery/jquery.japanese-input-change.js"></script>
+<script type ="text/Javascript" src="${pageContext.request.contextPath}/js/lib/jquery/jquery.i18n.properties.js"></script>
 <c:set var="titleKey">
     <tiles:insertAttribute name="title" ignore="true" />
 </c:set>

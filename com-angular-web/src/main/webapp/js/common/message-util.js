@@ -3,8 +3,8 @@ var MessageReader = function() {
   //To load messages from webapp/resources/screenMessages.properties
   this.initProps = function() {
     jQuery.i18n.properties({
-      name : [ 'environment', 'screenMessages' ], // Property file name
-      path : '../resources/', // url
+      name : [ 'screenMessages' ], // Property file name
+      path : '/com-angular-web/resources/', // url
       mode : 'map' // Expansion mode (Do not specify values other than map)
     });
   }
