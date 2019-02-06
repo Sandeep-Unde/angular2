@@ -50,5 +50,12 @@ public class HelloController {
 
         return "user/list";
     }
+    
+    @RequestMapping(value = "/dir2", method = {RequestMethod.GET, RequestMethod.POST})
+    public String dirTwo(Locale locale, Model model) {
+        logger.info("directive 2 invoked.................");
+
+        return "directv/dir2";
+    }
 
 }

@@ -51,10 +51,12 @@
                               <button type="button" ng-click="ctrl.reset()" class="btn btn-warning btn-sm" ng-disabled="myForm.$pristine">Reset Form</button>
                               <button type="button" ng-click="ctrl.listUser()" class="btn btn-warning btn-sm">User List</button>
                           </div>
+                          <div><button type="button" ng-click="ctrl.toSecDir()" class="btn btn-warning btn-sm">Goto 2nd Directive</button></div>
                       </div>
                   </form>
               </div>
           </div>
+          
       </div>
       
     

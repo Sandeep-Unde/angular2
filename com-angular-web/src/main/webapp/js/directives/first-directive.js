@@ -12,9 +12,9 @@ var dirResponse = app.directive('myDateDir', function() {
         	$scope.date = new Date();
            // element.css("background-color", "#ffff00");
         }
-
+        transclude:true;
         return linkFunction;
     }
-    directive.template = "{{date | date:'yyyy-MM-dd'}}";
+    directive.template = "{{date | date:'yyyy/MMM/dd'}}";
 	return directive;
 });

@@ -5,10 +5,12 @@ angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $
     
 	var APP_USER_SERVICE = '';
 	var APP_USER_LIST_SERVICE = '';
+	var DIR2_URL = '';
 	
 	 $http.get('connection.properties').then(function (response) {
 		 APP_USER_SERVICE =  response.data.APP_USER_SERVICE;
 		 APP_USER_LIST_SERVICE =  response.data.APP_USER_LIST_SERVICE;
+		 DIR2_URL =  response.data.DIR2_URL;
 	      });
 
     var factory = {
@@ -16,7 +18,8 @@ angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $
         createUser: createUser,
         updateUser:updateUser,
         deleteUser:deleteUser,
-        userList:userList
+        userList:userList,
+        openDir2:openDir2
     };
 
     return factory;
@@ -86,6 +89,10 @@ angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $
     
     function userList(){
     	window.location.href = APP_USER_LIST_SERVICE;
+    }
+    
+    function openDir2(){
+    	window.location.href = DIR2_URL;
     }
 
 }]);

@@ -11,6 +11,7 @@ angular.module('myApp').controller('UserController', ['$rootScope','$scope', 'Us
     self.remove = remove;
     self.reset = reset;
     self.listUser = listUser;
+    self.toSecDir = toSecDir;
         
     $scope.ser_port = "8080"; //not really needed
     $scope.initialize = function(server_port){
@@ -23,6 +24,11 @@ angular.module('myApp').controller('UserController', ['$rootScope','$scope', 'Us
     
     function listUser(){
     	UserService.userList();
+    }
+    
+    function toSecDir(){
+    	alert('1');
+    	UserService.openDir2();
     }
 
     function fetchAllUsers(){
@@ -103,4 +109,18 @@ angular.module('myApp').controller('UserController', ['$rootScope','$scope', 'Us
         $scope.myForm.$setPristine(); //reset Form
     }
 
+}]);
+
+angular.module('myApp').controller('ControllerTwo', ['$scope', function($scope){
+	
+	$scope.Mahesh = {};
+	$scope.Mahesh.name = 'Mahesh Rokade';
+	$scope.Mahesh.roll = '1';
+	
+	
+	$scope.Ramesh = {};
+	$scope.Ramesh.name = 'Ramesh Mhase';
+	$scope.Ramesh.roll = '2';
+	
+	
 }]);

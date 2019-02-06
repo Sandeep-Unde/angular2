@@ -3,7 +3,7 @@
   <script src="<c:url value='/js/directives/first-directive.js' />"></script>
 
 <h1>
-    <a href="${pageContext.request.contextPath}/">com-angular  </a><my-date-dir>dcwfw</my-date-dir>
+    <a href="${pageContext.request.contextPath}/">com-angular  </a><my-date-dir></my-date-dir>
 </h1>
 
 </body>
