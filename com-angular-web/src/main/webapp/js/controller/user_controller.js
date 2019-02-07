@@ -12,6 +12,7 @@ angular.module('myApp').controller('UserController', ['$rootScope','$scope', 'Us
     self.reset = reset;
     self.listUser = listUser;
     self.toSecDir = toSecDir;
+    self.publishPage = publishPage;
         
     $scope.ser_port = "8080"; //not really needed
     $scope.initialize = function(server_port){
@@ -26,8 +27,11 @@ angular.module('myApp').controller('UserController', ['$rootScope','$scope', 'Us
     	UserService.userList();
     }
     
+    function publishPage(){
+    	UserService.gotoPublisherPage();
+    }
+    
     function toSecDir(){
-    	alert('1');
     	UserService.openDir2();
     }
 
@@ -115,12 +119,12 @@ angular.module('myApp').controller('ControllerTwo', ['$scope', function($scope){
 	
 	$scope.Mahesh = {};
 	$scope.Mahesh.name = 'Mahesh Rokade';
-	$scope.Mahesh.roll = '1';
+	$scope.Mahesh.rollno = '1';
 	
 	
 	$scope.Ramesh = {};
 	$scope.Ramesh.name = 'Ramesh Mhase';
-	$scope.Ramesh.roll = '2';
+	$scope.Ramesh.rollno = '2';
 	
 	
 }]);

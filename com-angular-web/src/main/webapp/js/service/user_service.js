@@ -6,11 +6,15 @@ angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $
 	var APP_USER_SERVICE = '';
 	var APP_USER_LIST_SERVICE = '';
 	var DIR2_URL = '';
+	var PUB_PAGE_URL ='';
+	var LISTENER_PAGE_URL = '';
 	
 	 $http.get('connection.properties').then(function (response) {
 		 APP_USER_SERVICE =  response.data.APP_USER_SERVICE;
 		 APP_USER_LIST_SERVICE =  response.data.APP_USER_LIST_SERVICE;
 		 DIR2_URL =  response.data.DIR2_URL;
+		 PUB_PAGE_URL = response.data.PUB_PAGE_URL;
+		 LISTENER_PAGE_URL = response.data.LISTENER_PAGE_URL;
 	      });
 
     var factory = {
@@ -93,6 +97,14 @@ angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $
     
     function openDir2(){
     	window.location.href = DIR2_URL;
+    }
+    
+    function gotoPublisherPage(){
+    	window.location.href = PUB_PAGE_URL;
+    }
+    
+    function gotoListenerPage(){
+    	window.location.href = LISTENER_PAGE_URL;
     }
 
 }]);

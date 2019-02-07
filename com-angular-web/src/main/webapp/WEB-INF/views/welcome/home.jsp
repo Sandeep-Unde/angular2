@@ -52,6 +52,7 @@
                               <button type="button" ng-click="ctrl.listUser()" class="btn btn-warning btn-sm">User List</button>
                           </div>
                           <div><button type="button" ng-click="ctrl.toSecDir()" class="btn btn-warning btn-sm">Goto 2nd Directive</button></div>
+                          <div><button type="button" ng-click="ctrl.publishPage()" class="btn btn-warning btn-sm">Goto Publisher Controller</button></div>
                       </div>
                   </form>
               </div>

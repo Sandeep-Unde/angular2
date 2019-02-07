@@ -57,5 +57,19 @@ public class HelloController {
 
         return "directv/dir2";
     }
+    
+    @RequestMapping(value = "/pubData", method = {RequestMethod.GET, RequestMethod.POST})
+    public String publisherPage(Locale locale, Model model) {
+        logger.info("publisher page .................");
+
+        return "data/publisher";
+    }
+    
+    @RequestMapping(value = "/listenerData", method = {RequestMethod.GET, RequestMethod.POST})
+    public String listenerPage(Locale locale, Model model) {
+        logger.info("publisher page .................");
+
+        return "data/listener";
+    }
 
 }
