@@ -4,7 +4,7 @@ public class Student implements Comparable<Student>{
 	
 	private String sName;
 	
-	private int sNo;
+	private Integer sNo;
 
 	public String getsName() {
 		return sName;
@@ -14,11 +14,11 @@ public class Student implements Comparable<Student>{
 		this.sName = sName;
 	}
 
-	public int getsNo() {
+	public Integer getsNo() {
 		return sNo;
 	}
 
-	public void setsNo(int sNo) {
+	public void setsNo(Integer sNo) {
 		this.sNo = sNo;
 	}
 

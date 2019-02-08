@@ -65,7 +65,7 @@ public class HelloController {
         return "data/publisher";
     }
     
-    @RequestMapping(value = "/listenerData", method = {RequestMethod.GET, RequestMethod.POST})
+    @RequestMapping(value = "/listenData", method = {RequestMethod.GET, RequestMethod.POST})
     public String listenerPage(Locale locale, Model model) {
         logger.info("publisher page .................");
 

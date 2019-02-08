@@ -48,7 +48,7 @@ public class Sample {
 		}
 		System.out.println("---------------------------------");
 		
-		Collections.sort(plainList, new MyComparator());
+		Collections.sort(plainList, new MyComparator(MyComparator.FIELD_SORT_IDENTIFIER.NUM));
 		
 		System.out.println("-----Ordered List by sname asc---------------");
 		for (Student student : plainList) {

@@ -23,7 +23,9 @@ angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $
         updateUser:updateUser,
         deleteUser:deleteUser,
         userList:userList,
-        openDir2:openDir2
+        openDir2:openDir2,
+        gotoPublisherPage:gotoPublisherPage,
+        gotoListenerPage:gotoListenerPage,
     };
 
     return factory;
@@ -100,6 +102,7 @@ angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $
     }
     
     function gotoPublisherPage(){
+    	alert('2=>'+ PUB_PAGE_URL);
     	window.location.href = PUB_PAGE_URL;
     }
     

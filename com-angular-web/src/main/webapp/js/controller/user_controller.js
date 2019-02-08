@@ -13,6 +13,7 @@ angular.module('myApp').controller('UserController', ['$rootScope','$scope', 'Us
     self.listUser = listUser;
     self.toSecDir = toSecDir;
     self.publishPage = publishPage;
+    self.listenerPage = listenerPage;
         
     $scope.ser_port = "8080"; //not really needed
     $scope.initialize = function(server_port){
@@ -21,10 +22,14 @@ angular.module('myApp').controller('UserController', ['$rootScope','$scope', 'Us
     }
 
 
-    fetchAllUsers();
+   // fetchAllUsers();
     
     function listUser(){
     	UserService.userList();
+    }
+    
+    function listenerPage(){
+    	UserService.gotoListenerPage();
     }
     
     function publishPage(){
