@@ -1,4 +1,6 @@
-angular.module('myApp').controller('receiverController', [function($scope,Data){
-	//console.log('First Name published is==>'+ Data.firstName);
-	//$scope.firstName = Data.firstName;
-}]);
+
+var myApp = angular.module('myApp');
+myApp.controller('SecondCtrl1', function( $scope, Fact ){
+	alert(Fact);
+  $scope.Beta = Fact;
+});

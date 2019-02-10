@@ -54,6 +54,8 @@
                           <div><button type="button" ng-click="ctrl.toSecDir()" class="btn btn-warning btn-sm">Goto 2nd Directive</button></div>
                           <div><button type="button" ng-click="ctrl.publishPage()" class="btn btn-warning btn-sm">Goto Publisher Controller</button></div>
                            <div><button type="button" ng-click="ctrl.listenerPage()" class="btn btn-warning btn-sm">Goto Listener Controller</button></div>
+                           <div><button type="button" ng-click="ctrl.shareDataPage()" class="btn btn-warning btn-sm">Goto Controllers sharing data</button></div>
+                           
                       </div>
                   </form>
               </div>

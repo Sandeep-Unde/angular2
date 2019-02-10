@@ -8,6 +8,7 @@ angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $
 	var DIR2_URL = '';
 	var PUB_PAGE_URL ='';
 	var LISTENER_PAGE_URL = '';
+	var CTRL_SHARE_DATA_URL = '';
 	
 	 $http.get('connection.properties').then(function (response) {
 		 APP_USER_SERVICE =  response.data.APP_USER_SERVICE;
@@ -15,6 +16,7 @@ angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $
 		 DIR2_URL =  response.data.DIR2_URL;
 		 PUB_PAGE_URL = response.data.PUB_PAGE_URL;
 		 LISTENER_PAGE_URL = response.data.LISTENER_PAGE_URL;
+		 CTRL_SHARE_DATA_URL = response.data.CTRL_SHARE_DATA_URL;
 	      });
 
     var factory = {
@@ -26,6 +28,7 @@ angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $
         openDir2:openDir2,
         gotoPublisherPage:gotoPublisherPage,
         gotoListenerPage:gotoListenerPage,
+        gotoCtrlShareDataPage : gotoCtrlShareDataPage,
     };
 
     return factory;
@@ -108,6 +111,11 @@ angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $
     
     function gotoListenerPage(){
     	window.location.href = LISTENER_PAGE_URL;
+    }
+    
+    function gotoCtrlShareDataPage(){
+    	alert('22323'+ CTRL_SHARE_DATA_URL);
+    	window.location.href = CTRL_SHARE_DATA_URL;
     }
 
 }]);

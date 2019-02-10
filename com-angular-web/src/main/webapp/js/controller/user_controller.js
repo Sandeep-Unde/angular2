@@ -14,6 +14,7 @@ angular.module('myApp').controller('UserController', ['$rootScope','$scope', 'Us
     self.toSecDir = toSecDir;
     self.publishPage = publishPage;
     self.listenerPage = listenerPage;
+    self.shareDataPage = shareDataPage;
         
     $scope.ser_port = "8080"; //not really needed
     $scope.initialize = function(server_port){
@@ -26,6 +27,11 @@ angular.module('myApp').controller('UserController', ['$rootScope','$scope', 'Us
     
     function listUser(){
     	UserService.userList();
+    }
+    
+    function shareDataPage(){
+    	alert('1');
+    	UserService.gotoCtrlShareDataPage();
     }
     
     function listenerPage(){
@@ -121,6 +127,30 @@ angular.module('myApp').controller('UserController', ['$rootScope','$scope', 'Us
 }]);
 
 angular.module('myApp').controller('ControllerTwo', ['$scope', function($scope){
+	
+	
+	var User = function (){
+		this.firstName = '';
+		this.lastName = '';
+		
+		setFirstName = function(firstName){
+			this.firstName = firstName;
+		}
+		
+		getName = function(){
+			return firstName;
+		}
+		
+		setLastName = function(lastName){
+			this.lastName = LastName;
+		}
+		
+		lastName = function(){
+			return lastName;
+		}
+		
+		
+	}
 	
 	$scope.Mahesh = {};
 	$scope.Mahesh.name = 'Mahesh Rokade';

@@ -1,9 +1,7 @@
 'use strict';
 
-var app = angular.module('myApp');
+var myApp = angular.module('myApp');
 
-app.factory('Data', function(){
-	var firstName = '';
-	return firstName;
-	
-});
+myApp.factory('User', function(){
+	  return { firstName: '' };
+	});

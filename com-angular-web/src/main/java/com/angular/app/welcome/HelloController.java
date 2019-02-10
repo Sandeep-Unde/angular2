@@ -71,5 +71,11 @@ public class HelloController {
 
         return "data/listener";
     }
+//ctrlShareData
+    @RequestMapping(value = "/ctrlShareData", method = {RequestMethod.GET, RequestMethod.POST})
+    public String ctrlShareData(Locale locale, Model model) {
+        logger.info("publisher page .................");
 
+        return "data/ctrlShareDataPage";
+    }
 }
