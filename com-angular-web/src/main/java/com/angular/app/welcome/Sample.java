@@ -27,6 +27,9 @@ public class Sample {
 		s4.setsName("abc");
 		s4.setsNo(44);
 		
+		
+		System.out.println("hashcode==>"+s1.hashCode());
+		
 		List<Student> plainList = new ArrayList<Student>();
 		
 		plainList.add(s1);

@@ -32,32 +32,53 @@
                           </div>
                       </div>
 
-                      <div class="row">
-                          <div class="form-group col-md-12">
-                              <label class="col-md-2 control-lable" for="file">Email</label>
-                              <div class="col-md-7">
-                                  <input type="email" ng-model="ctrl.user.email" name="email" class="email form-control input-sm" placeholder="Enter your Email" required/>
-                                  <div class="has-error" ng-show="myForm.$dirty">
-                                      <span ng-show="myForm.email.$error.required">This is a required field</span>
-                                      <span ng-show="myForm.email.$invalid">This field is invalid </span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label class="col-md-2 control-lable" for="file">Email</label>
+							<div class="col-md-7">
+								<input type="email" ng-model="ctrl.user.email" name="email"
+									class="email form-control input-sm"
+									placeholder="Enter your Email" required />
+								<div class="has-error" ng-show="myForm.$dirty">
+									<span ng-show="myForm.email.$error.required">This is a
+										required field</span> <span ng-show="myForm.email.$invalid">This
+										field is invalid </span>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                      <div class="row">
-                          <div class="form-actions floatRight">
-                              <input type="submit"  value="{{!ctrl.user.id ? 'Add' : 'Update'}}" class="btn btn-primary btn-sm" ng-disabled="myForm.$invalid">
-                              <button type="button" ng-click="ctrl.reset()" class="btn btn-warning btn-sm" ng-disabled="myForm.$pristine">Reset Form</button>
-                              <button type="button" ng-click="ctrl.listUser()" class="btn btn-warning btn-sm">User List</button>
-                          </div>
-                          <div><button type="button" ng-click="ctrl.toSecDir()" class="btn btn-warning btn-sm">Goto 2nd Directive</button></div>
-                          <div><button type="button" ng-click="ctrl.publishPage()" class="btn btn-warning btn-sm">Goto Publisher Controller</button></div>
-                           <div><button type="button" ng-click="ctrl.listenerPage()" class="btn btn-warning btn-sm">Goto Listener Controller</button></div>
-                           <div><button type="button" ng-click="ctrl.shareDataPage()" class="btn btn-warning btn-sm">Goto Controllers sharing data</button></div>
-                           
-                      </div>
-                  </form>
+					<div class="row">
+						<div class="form-actions floatRight">
+							<input type="submit" value="{{!ctrl.user.id ? 'Add' : 'Update'}}"
+								class="btn btn-primary btn-sm" ng-disabled="myForm.$invalid">
+							<button type="button" ng-click="ctrl.reset()"
+								class="btn btn-warning btn-sm" ng-disabled="myForm.$pristine">Reset
+								Form</button>
+							<button type="button" ng-click="ctrl.listUser()"
+								class="btn btn-warning btn-sm">User List</button>
+						</div>
+						<div>
+							<button type="button" ng-click="ctrl.toSecDir()"
+								class="btn btn-warning btn-sm">Goto 2nd Directive</button>
+						</div>
+						<div>
+							<button type="button" ng-click="ctrl.publishPage()"
+								class="btn btn-warning btn-sm">Goto Publisher
+								Controller</button>
+						</div>
+						<div>
+							<button type="button" ng-click="ctrl.listenerPage()"
+								class="btn btn-warning btn-sm">Goto Listener Controller</button>
+						</div>
+						<div>
+							<button type="button" ng-click="ctrl.shareDataPage()"
+								class="btn btn-warning btn-sm">Goto Controllers sharing
+								data</button>
+						</div>
+
+					</div>
+				</form>
               </div>
           </div>
           
