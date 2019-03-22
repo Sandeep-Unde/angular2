@@ -5,12 +5,12 @@
 
 		<div>User Name :</div>
 		<div>
-			<input type="text" name="uname" ng-mdodel="loginCtrl.user.userName"
+			<input type="text" name="uname" ng-model="loginCtrl.user.userName"
 				required ng-minlength="3"/>
 		</div>
 		<div>Password :</div>
 		<div>
-			<input type="password" name="pass" ng-mdodel="loginCtrl.user.password"
+			<input type="password" name="pass" ng-model="loginCtrl.user.password"
 				required ng-minlength="3"/>
 		</div>
 		<div>
