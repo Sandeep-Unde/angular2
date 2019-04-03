@@ -48,6 +48,8 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
      <link href="<c:url value='/css/app.css' />" rel="stylesheet"></link>
      <script src="<c:url value='/js/common/message-util.js' />"></script>
+     <script src="<c:url value='/js/external/dirPagination.js' />"></script>
+     
 </head>
 <body>
     <div class="container">

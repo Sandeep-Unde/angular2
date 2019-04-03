@@ -41,7 +41,7 @@ public class HelloController {
         
         model.addAttribute("server_port", req.getServerPort());
 
-        return "welcome/login";
+        return "welcome/landingpage";
     }
     
     @RequestMapping(value = "/list", method = {RequestMethod.GET, RequestMethod.POST})

@@ -14,4 +14,7 @@
 		<td>{{emp.empAddress}}</td>
 	</tr>
 	</table>
+	
+	<script src="<c:url value='/js/service/emp_service.js' />"></script>
+      <script src="<c:url value='/js/controller/emp_controller.js' />"></script>
 </div>

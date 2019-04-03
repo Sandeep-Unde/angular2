@@ -14,7 +14,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import com.angular.domain.model.Employee;
 import com.angular.domain.model.User;
+import com.angular.domain.service.EmployeeService;
 import com.angular.domain.service.UserService;
  
   
@@ -23,6 +25,9 @@ public class HelloWorldRestController {
   
     @Autowired
     UserService userService;  //Service which will do all data retrieval/manipulation work
+    
+    @Autowired
+    private EmployeeService employeeService;
   
      
     //-------------------Retrieve All Users--------------------------------------------------------
@@ -132,6 +137,16 @@ public class HelloWorldRestController {
         }
         
         return new ResponseEntity<List<User>>(users, HttpStatus.OK);
+    }
+    
+    @RequestMapping(value="/empList", method = RequestMethod.GET)
+    public ResponseEntity<List<Employee>> showEmpList(UriComponentsBuilder ucBuilder) {
+    	List<Employee> users = employeeService.getEmployeeList();
+        if(users.isEmpty()){
+            return new ResponseEntity<List<Employee>>(HttpStatus.NO_CONTENT);//You many decide to return HttpStatus.NOT_FOUND
+        }
+        
+        return new ResponseEntity<List<Employee>>(users, HttpStatus.OK);
     }
     
     

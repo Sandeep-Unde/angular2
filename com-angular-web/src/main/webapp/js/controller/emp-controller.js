@@ -1,14 +1,25 @@
 var app = angular.module("myApp");
 
 app.controller("EmpController",['EmpService', function(EmpService){
-	this.empList = [];
+	var self = this;
+	self.empList = [];
 	
-	this.fetchEmpList = fetchEmpList;
+	self.fetchEmpList = fetchEmpList;
 	
-	fetchEmpList();
+	self.empList = fetchEmpList();
 	
 	function fetchEmpList(){
-		this.empList = EmpService.fetEmployeeDetails();
+		
+		EmpService.fetEmployeeDetails()
+         .then(
+         function(d) {
+        	 self.empList = d;
+         },
+         function(errResponse){
+             console.error('Error while fetching Users');
+         }
+     );
+		return self.empList;
 	}
 	
 	
